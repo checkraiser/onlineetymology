@@ -12,20 +12,24 @@
 	<dict>
 		<key>16CE14A2D81CCE323D476004724594AEF6B38C0A</key>
 		<string>https://github.com/facebook/react-native</string>
+		<key>54FFE58BEEBED476655E93F6A88DE4AEC6300E0E</key>
+		<string>https://github.com/checkraiser/react-native-admob</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Examples/AdmobTest/AdmobTest.xcodeproj</string>
+	<string>AdmobTest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>16CE14A2D81CCE323D476004724594AEF6B38C0A</key>
-		<string>../../../..</string>
+		<string>../../..</string>
+		<key>54FFE58BEEBED476655E93F6A88DE4AEC6300E0E</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/facebook/react-native</string>
+	<string>https://github.com/checkraiser/react-native-admob</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>16CE14A2D81CCE323D476004724594AEF6B38C0A</string>
+	<string>54FFE58BEEBED476655E93F6A88DE4AEC6300E0E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>16CE14A2D81CCE323D476004724594AEF6B38C0A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>rn</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>54FFE58BEEBED476655E93F6A88DE4AEC6300E0E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AdmobTest</string>
 		</dict>
 	</array>
 </dict>

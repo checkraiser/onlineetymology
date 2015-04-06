@@ -20,6 +20,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		223372931AD07B6E00C7FFC0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 223372921AD07B6E00C7FFC0 /* libsqlite3.dylib */; };
+		223372961AD1153800C7FFC0 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 223372951AD1153800C7FFC0 /* SQLiteManager.m */; };
+		223B81C11AD1593B009C1502 /* ety.db in Resources */ = {isa = PBXBuildFile; fileRef = 223B81C01AD1593B009C1502 /* ety.db */; };
 		22B2D6DA1AC6BCA000A6F276 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2D6D91AC6BCA000A6F276 /* GoogleMobileAds.framework */; };
 		22B2D6E81AC6C50900A6F276 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 22B2D6E71AC6C50900A6F276 /* main.jsbundle */; };
 		22BD90FD1AC7D6D800484BA4 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D7221AC6EB5D00A6F276 /* MyViewController.m */; };
@@ -109,6 +112,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOS/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		223372921AD07B6E00C7FFC0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		223372941AD1153800C7FFC0 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		223372951AD1153800C7FFC0 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
+		223372971AD11BA100C7FFC0 /* testing.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = testing.sqlite; sourceTree = "<group>"; };
+		223B81C01AD1593B009C1502 /* ety.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ety.db; sourceTree = "<group>"; };
 		22B2D6D91AC6BCA000A6F276 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		22B2D6E71AC6C50900A6F276 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		22B2D7211AC6EB5D00A6F276 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyViewController.h; path = ../Mix/MyViewController.h; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223372931AD07B6E00C7FFC0 /* libsqlite3.dylib in Frameworks */,
 				00481BEA1AC0C89D00671115 /* libicucore.dylib in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00481BE81AC0C86700671115 /* libRCTWebSocketDebugger.a in Frameworks */,
@@ -197,6 +206,8 @@
 		13B07FAE1A68108700A75B9A /* AdmobTest */ = {
 			isa = PBXGroup;
 			children = (
+				223372941AD1153800C7FFC0 /* SQLiteManager.h */,
+				223372951AD1153800C7FFC0 /* SQLiteManager.m */,
 				22B2D7221AC6EB5D00A6F276 /* MyViewController.m */,
 				22B2D7211AC6EB5D00A6F276 /* MyViewController.h */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -245,6 +256,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				223B81C01AD1593B009C1502 /* ety.db */,
+				223372971AD11BA100C7FFC0 /* testing.sqlite */,
+				223372921AD07B6E00C7FFC0 /* libsqlite3.dylib */,
 				22B2D6E71AC6C50900A6F276 /* main.jsbundle */,
 				22B2D6D91AC6BCA000A6F276 /* GoogleMobileAds.framework */,
 				13B07FAE1A68108700A75B9A /* AdmobTest */,
@@ -417,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223B81C11AD1593B009C1502 /* ety.db in Resources */,
 				22B2D6E81AC6C50900A6F276 /* main.jsbundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
@@ -433,6 +448,7 @@
 				22BD90FD1AC7D6D800484BA4 /* MyViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				223372961AD1153800C7FFC0 /* SQLiteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
